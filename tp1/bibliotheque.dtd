@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Auteurs :
+ Mourad Benchikh 20034241 
+ Lenny Siemeni    1055234 -->
+
+<!ELEMENT bibliotheque (auteurs, livres) >
+<!ELEMENT auteurs (auteur+) >
+<!ELEMENT auteur (((nom, prenom) | (prenom, nom)), pays, commentaire? , photo) >
+<!ATTLIST auteur ident ID #REQUIRED >
+<!ELEMENT nom (#PCDATA) >
+<!ELEMENT prenom (#PCDATA) >
+<!ELEMENT pays (#PCDATA) >
+<!ELEMENT commentaire (#PCDATA) >
+<!ELEMENT photo EMPTY >
+<!ATTLIST photo url CDATA #REQUIRED >
+
+<!ELEMENT livres (livre+) >
+<!ELEMENT livre (titre, annee, prix, couverture?, commentaire?) >
+<!ATTLIST livre langue CDATA #REQUIRED >
+<!ATTLIST livre auteurs IDREFS #REQUIRED >
+<!ELEMENT titre (#PCDATA) >
+<!ELEMENT annee (#PCDATA) >
+<!ELEMENT prix (#PCDATA) >
+<!ATTLIST prix devise (EURO | CAD | USD) #IMPLIED >
+<!ELEMENT couverture EMPTY >
+<!ATTLIST couverture url CDATA #REQUIRED >
+
+
+

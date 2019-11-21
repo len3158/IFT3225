@@ -1,0 +1,32 @@
+/* Auteurs :
+-- Mourad Benchikh 20034241 
+-- Lenny Siemeni    1055234 
+
+Quelques mises en page de la transformation des fichiers xsl
+
+*/
+
+.corps{
+    background-color:white;
+}
+
+.tab{
+    border:groove 3px;
+     width:auto;
+     border-collapse: collapse;
+     background-color:coral;
+     
+    
+ }   
+    
+ td {
+  padding: 8px;
+  border: 2px solid #ddd;
+  vertical-align: top;
+  }
+  
+.text{
+     font-weight: bold;
+}
+
+.colonne2 { width:20%; }

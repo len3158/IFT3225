@@ -1,0 +1,117 @@
+/*
+Auteurs :
+Lenny SIEMENI (1055234)
+Mourad BENCHIKH(20034241)
+*/
+*,*::after,*::before{
+            box-sizing: border-box;
+            margin: 5;
+            padding: 5;
+        }
+
+#header{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    text-align: center;
+    color : white;
+    background-color: #2d2e2e;
+    width: 100%;
+    height: 25px;
+}
+
+#header h3 {
+	text-align: center;
+    margin: 0;
+
+}
+        .toolbar{
+            
+            display: block;
+            left: 0;
+            right: 0;
+            top: 0;
+            font-weight:bold;
+			background-color:#f9eeeb;
+			 box-shadow: 2px 2px 0px #aaa;
+            padding: 15px;
+            height: 130px;
+			
+        }
+        fieldset{
+            border-right: 0px;
+        }
+        .deplacements {
+            font-size: 1.32rem;
+            float: right;
+            margin-right: 5px;
+        }
+        .grid{
+            margin-top: 25px;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        table{
+            border-collapse: collapse;
+        }
+       
+        td{
+            border: 1px solid black;
+            position: relative;
+        }
+        td span{
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 1.3rem;
+            opacity: 0;
+        }
+        .vide span{
+            display: none;
+        }
+        .tollbar2{
+			 float: right;
+			 
+		}
+		
+		.tollbar1{
+			 float: left;
+			 
+		}
+		.moveNbr{background-color:white;}
+
+.wrapper{
+    text-align: center;
+    margin: auto;
+}
+
+#footer {
+	width: 100%;
+	text-align: center;
+	margin:auto;
+	padding:10px;
+}
+
+footer{
+padding-top:1em;
+font-size:10pt;
+text-align:center;
+color: white;
+background-color: #2d2e2e;
+}
+
+img.udem-logo{
+    display: inline-block;
+}
+
+footer a{
+    color: white;
+}
+
+footer img {
+
+    vertical-align: middle;
+    border-style: none;
+
+}

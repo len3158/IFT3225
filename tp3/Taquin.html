@@ -1,0 +1,73 @@
+<!--
+Auteurs :
+Lenny SIEMENI (1055234)
+Mourad BENCHIKH(20034241)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Taquin - IFT3225</title>
+    <link rel="stylesheet" type="text/css" href="css/Taquin.css" media="screen">
+</head>
+<body>
+<header id="header"><h3>IFT3225 - Technologies du web - Jeu de taquin</h3></header>
+
+<div class="wrapper">
+  <!-- Anciennement <div>class="toolbar"-->
+         <fieldset>
+            <legend>Description</legend>
+	       <div class="tollbar1">
+	       <label for="Url"> Url de l'image <input type="text" class="urlImage" placeholder="entrer l'url de l'image"/></label>
+           <button class="changeImage">Changer l'image </button><br/>
+           <br/>
+           <label for="nbLignes">Nombre de lignes <input type="number" name="nbLignes" class="nbLignes" placeholder=" Nombre de Lignes" min="3"/></label>
+           <label for="nbColonnes">Nombre de colonnes <input type="number" class="nbColonnes" placeholder=" Nombre de colonnes" name="nbColonnes" min="3"></label>
+           <button class="afficher">Afficher</button>
+           <button class="brasser">brasser les tuiles</button>
+		   </div>
+		   <div class="tollbar2">
+		   <label for="numDisplayCheck">Affichage des numeros</label>
+               <input type="checkbox" name="numDisplayCheck" class="numDisplay"/><br/>
+           <br/>
+        <label class="moveCount"> Déplacements:&nbsp<span class="moveNbr" id="compteur">0</span></label>
+		</div>
+         </fieldset>
+
+       <div class="grid">
+
+    </div>
+    <div id="infoArea">
+		<form name="displayScores" class="gameSettings" method="post" action="php/home.php">
+			<button>Sauvegarder et Afficher mes scores</button>
+            <input type="hidden" id="move_count_hidden"
+                   name="move_count_hidden" value="0"/>
+            <input type="hidden" id="col_count_hidden"
+                   name="col_count_hidden" value="3"/>
+            <input type="hidden" id="line_count_hidden"
+                   name="line_count_hidden" value="3"/>
+            <input type="hidden" id="action" name="action_type" value="getGameSettings"/>
+            <input type="hidden" id="succes_hidden" name="succes_hidden" value="false"/>
+            <input type="hidden" id="play_hidden" name="play_hidden" value="false"/>
+		</form>
+    </div>
+    <h3 class="link"><a href="http://www-etud.iro.umontreal.ca/~siemenil/IFT3225/tp3/connexion.html">Le jeu sur les serveurs du DIRO</a></h3>
+</div>
+    <script
+  src="js/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="></script>
+  <script src="js/code.js"></script>
+ <script src="js/controller.js"></script>
+</body>
+        <footer id="footer">
+        <ul>
+            Auteurs
+            <li>Lenny SIEMENI (1055234)</li>
+            <li>Mourad BENCHIKH(20034241)</li>
+        </ul>
+        <p>Département d'informatique et recherche opérationnelle</p>
+        <a href="https://diro.umontreal.ca/accueil/"><img class="udem-logo" src="images/15_DIRO_LOGO_NB_modif.png" width="195px" height="38px"></a>
+        <a href="https://www.umontreal.ca/"><img class="udem-logo" src="images/UdeM_logo_Blanc.png" width="195px" height="92px"></a>
+    </footer>
+</html>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE  bibliotheque SYSTEM "bibliotheque.dtd"> 
+<?xml-stylesheet type="text/xsl" href="livre.xsl"?> 
+<?xml-stylesheet type="text/xsl" href="auteurs.xsl"?>
+<?xml-stylesheet type="text/css" href="bibliotheque.css"?>
+<!--Auteurs :
+ Mourad Benchikh 20034241 
+ Lenny Siemeni    1055234 -->
+<bibliotheque>
+  <auteurs>  
+    <auteur ident="auteur1">
+        <nom>de Balzac</nom>
+        <prenom>Honoré</prenom>
+        <pays>France</pays>
+        <commentaire>Honoré de Balzac est un écrivain français. Romancier, dramaturge, critique
+            littéraire, critique d'art, essayiste, journaliste et imprimeur, il a laissé l'une des
+            plus imposantes œuvres romanesques de la littérature française, avec plus de
+            quatre-vingt-dix romans et nouvelles </commentaire>
+        
+        <photo url ="https://upload.wikimedia.org/wikipedia/commons/e/e6/Honor%C3%A9_de_Balzac_%281842%29_Detail.jpg"/>
+    </auteur>
+    <auteur ident="auteur2">
+        <nom>Shakespeare</nom>
+        <prenom>William</prenom>
+        <pays> Royaume d'Angleterre </pays>
+        <commentaire> baptisé le 26 avril 1564 à Stratford-upon-Avon et mort le 23 avril 1616 (3 mai
+            1616 dans le calendrier grégorien) dans la même ville, est considéré comme l'un des plus
+            grands poètes, dramaturges et écrivains de la culture anglaise. </commentaire>
+        <photo url="https://upload.wikimedia.org/wikipedia/commons/3/36/Shakespeare_Droeshout_1623.jpg"/>
+    </auteur>
+    <auteur ident="auteur3">
+        <nom>Zola</nom>
+        <prenom>Emile</prenom>
+        <pays>France</pays>
+        <commentaire>Émile Zola est un écrivain et journaliste français, né le 2 avril 1840 à Paris
+            où il est mort le 29 septembre 1902. Considéré comme le chef de file du naturalisme,
+            c'est l'un des romanciers français les plus populaires </commentaire>
+        
+        <photo url="https://upload.wikimedia.org/wikipedia/commons/5/5a/Emile_Zola_1902.jpg"/> 
+    </auteur>
+      <auteur ident="auteur4">
+          <prenom>Chatrian</prenom>
+          <nom> Alexandre </nom>
+          <pays>France</pays>
+          <commentaire>Alexandre Chatrian, né le 18 décembre 1826 à Soldatenthal et mort le 3 septembre 1890 à Villemomble, est un écrivain français.
+              Il est plus connu sous le nom de plume commun d’« Erckmann-Chatrian » qu’il partage avec son ami Émile Erckmann. 
+          </commentaire>
+          <photo url="https://upload.wikimedia.org/wikipedia/commons/c/cb/Emile_Erckmann_Alexandre_Chatrian.jpg"/>
+      </auteur>      
+      <auteur ident="auteur5">
+          <nom>Erckmann</nom>
+          <prenom>Émile</prenom>
+          <pays>France</pays>
+          <commentaire>Émile Erckmann, né le 20 mai 1822 à Phalsbourg et mort le 14 mars 1899 à Lunéville en France, est un écrivain français. 
+              Il est plus connu sous le nom de plume commun d’« Erckmann-Chatrian » qu’il partageait avec son ami Alexandre Chatrian.</commentaire>
+          <photo url="https://upload.wikimedia.org/wikipedia/commons/5/55/Erckmann-Chatrian02.jpg"/>
+      </auteur>
+  </auteurs> 
+  <livres> 
+    <livre langue="anglais" auteurs="auteur2">
+        <titre>Hamlet</titre>
+        <annee>1603</annee>
+        <prix devise="USD"> 12.00 </prix>
+        <couverture url="https://upload.wikimedia.org/wikipedia/commons/8/8e/Eug%C3%A8ne_Ferdinand_Victor_Delacroix_018.jpg"/>
+        <commentaire>La Tragique Histoire d'Hamlet, prince de Danemark (en anglais, The Tragedy of
+            Hamlet, Prince of Denmark) plus couramment désigné sous le titre abrégé Hamlet, est la
+            plus longue et l'une des plus célèbres pièces de William Shakespeare. La date exacte de
+            son écriture n'est pas connue avec précision ; la première représentation se situe
+            sûrement entre 1598 et 1601. Le texte fut publié en 1603. </commentaire>
+    </livre>
+    <livre langue="francais" auteurs="auteur1">
+        <titre>Le Père Goriot</titre>
+        <annee>1842</annee>
+        <prix devise="CAD"> 25.00 </prix>
+        <couverture url="https://upload.wikimedia.org/wikipedia/commons/b/b6/BalzacOldGoriot01.jpg"/>
+        <commentaire>Le Père Goriot est un roman d’Honoré de Balzac, commencé à Saché en 1834, dont
+            la publication commence dans la Revue de Paris et qui paraît en 1842 en librairie. Il
+            fait partie des Scènes de la vie privée de La Comédie humaine </commentaire>
+    </livre>
+    <livre langue="anglais" auteurs="auteur2">
+        <titre>Roméo et Juliette</titre>
+        <annee>1582</annee>
+        <prix> 15.00 </prix>
+        <couverture url="https://upload.wikimedia.org/wikipedia/commons/4/4c/Romeoandjuliet1597.jpg"/> 
+    </livre>
+    <livre langue="francais" auteurs="auteur3">
+        <titre>Germinal</titre>
+        <annee>1885</annee>
+        <prix devise="EURO"> 22.00 </prix>
+        <couverture url="https://upload.wikimedia.org/wikipedia/commons/b/b6/Gil_Blas_-_Germinal.jpg"/>
+        <commentaire>Germinal est un roman d'Émile Zola publié en 1885. Il s'agit du treizième roman
+            de la série des Rougon-Macquart.</commentaire>
+    </livre>
+      <livre langue="francais" auteurs="auteur4  auteur5">
+          <titre>L'Ami Fritz</titre>
+          <annee>1864</annee>
+          <prix devise="EURO"> 33.00 </prix>
+          <couverture url="https://upload.wikimedia.org/wikipedia/commons/b/bf/Malassis_illustration_de_L_Ami_Fritz_couverture.jpeg"/> 
+          <commentaire>
+              L'ami Fritz est une description réjouissante d'une partie de l'Alsace,
+              dans laquelle diverses communautés vivent en bonne harmonie : anabaptistes, protestants, juifs, catholiques,
+              ces derniers cependant les plus pauvres et décrits comme les plus rétifs au « contrat social ». 
+              Le personnage de Fritz est la personnification de cette harmonie et ne se préoccupe que de bien vivre,
+              en bonne amitié avec ceux qu'il aime. 
+          </commentaire>
+      </livre>
+  </livres> 
+</bibliotheque>

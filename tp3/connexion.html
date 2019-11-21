@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+        <link href="css/styleFilms.css" rel="stylesheet" media="screen"/>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet"/>
+<title>Connexion</title>
+</head>
+<body>
+<nav class="navbar">
+                <ul id="navbar" class="nav navbar-nav navbar-left navbar">
+                <li class="creerCompte"><a href="#" >Créer un compte</a></li>
+                <li class="connect"><a href="#" >Se Connecter</a></li>
+                </ul>
+        </nav>
+
+<!-- Ajouter un Membre-->
+<div id="divEnregistrerMembre" hidden="true" style="position:absolute;top:20%;left:30%">
+<h2>Saisissez vos coordonnées ci-dessous:</h2>
+<form id="formMembre" name="inscription" ENCTYPE="multipart/form-data" action="php/inscription.php" method="post">
+<label>Courriel : </label><input type="email" id="email" name="identifiant" required/><br><br>
+<label>Mot de passe : </label><input type="password" id="pass" name="password" required/><br><br>
+<label>Nom : </label><input type="text" id="nom" name="nom" required/><br><br>
+<label>Prénom : </label><input type="text" id="prenom" name="prenom" required/><br><br>
+<br><br>
+<input type="submit" value="Valider"/>
+<img src="images/fermer.png" class="close"/>
+</form>
+</div>
+
+<!-- Connexion-->
+<div id="divSeConnecter" hidden="true"  style="position:absolute;top:30%;left:30%">
+	<h3>Connexion Membre</h3><br>
+<form id="formConnexion" name="connexion" action="php/home.php" ENCTYPE="multipart/form-data" method="post">
+<label>Courriel : </label><input type=email id="codeUtil" name="identifiant"><br><br>
+<label>Mot de passe : </label><input type=password id="password" name="password"><br><br>
+<input type="hidden" id="action" name="action_type" value="login"/>
+<input type=submit value="Se connecter"/>
+</form>
+    <img src="images/fermer.png" class="close"/>
+</div>
+</body>
+<footer>
+    <div id = "w3cValidator">
+        <h3 class = "sousTitre">Travail fait par Lenny SIEMENI (1055234) et Mourad BENCHIKH(20034241)</h3>
+    </div>
+</footer>
+
+<!-- Ces scripts sont nécessaires pour la barre de navigation-->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+<script language="javascript" src="js/script.js"></script>
+<script language="javascript" src="js/controller.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>

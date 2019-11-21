@@ -1,0 +1,58 @@
+#<!--Auteurs :
+# Mourad Benchikh 20034241 
+# Lenny Siemeni    1055234 -->
+
+default namespace = "biblitoheque"
+
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+
+start = bibliotheque
+
+bibliotheque = element bibliotheque {auteur+, livre+}
+
+auteur = element auteur {
+         attribute ident {xsd:ID},
+         ((element nom{text} ,element prenom{text}+) |(element prenom{text}+,element nom{text})) ,
+         pays,
+         commentaire?, #car optionnel
+         photo
+         }
+         
+nom = element nom {text}
+prenom = element prenom {text}
+pays = element pays {text}
+
+photo = element photo {
+        attribute url {text},
+        empty
+        }
+
+livre = element livre {
+        attribute langue {xsd:language},
+        attribute auteurs {xsd:IDREFS},
+        titre,
+        annee,
+        prix,
+        couverture,
+        commentaire? #car optionnel
+        }
+        
+titre = element titre {xsd:string{maxLength = "60"}}
+annee = element annee {xsd:gYear}
+prix = element prix {
+       attribute devise {("EURO" | "CAD" | "USD")?},
+       xsd:decimal {
+       minInclusive="0"
+       maxInclusive="100"
+       fractionDigits ="2"
+       }
+       
+        
+       }
+       
+# xsd:anyURI : On veut que l'attribut soit reconnu comme un URL, pas simplement du texte.
+ couverture = element couverture {
+               attribute url {xsd:anyURI},
+               empty
+                                 }
+ commentaire = element commentaire {text}

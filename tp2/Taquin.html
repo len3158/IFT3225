@@ -1,0 +1,62 @@
+<!-- 
+Auteurs :
+Lenny SIEMENI (1055234)
+Mourad BENCHIKH(20034241)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Taquin - IFT3225</title>
+    <link rel="stylesheet" href="Taquin.css">
+    <link rel="stylesheet" type="text/css" href="css/taquin.css" media="screen">
+</head>
+<body>
+<header id="header"><h3>IFT3225 - Technologies du web - Jeu de taquin</h3></header>
+
+<div class="wrapper">
+       <div class="toolbar">
+         <fieldset>
+            <legend>Description</legend>
+	       <div class="tollbar1">
+	       <label for="Url"> Url de l'image <input type="text" class="urlImage" placeholder="entrer l'url de l'image"/></label>
+           <button class="changeImage">Changer l'image </button><br/>
+           <br/>
+           <label for="nbLignes">Nombre de lignes <input type="number" class="nbLignes" placeholder=" Nombre de Lignes" min="3"></label>
+           <label for="nbColonnes">Nombre de colonnes <input type="number" class="nbColonnes" placeholder=" Nombre de colonnes" min="3"></label>
+           <button class="afficher">Afficher</button>
+           <button class="brasser">brasser les tuiles</button>
+		   </div>
+		   <div class="tollbar2">
+		   <label for="numDisplayCheck">Affichage des numeros</label>
+               <input type="checkbox" name="numDisplayCheck" class="numDisplay"/><br/>
+           <br/>
+       
+        <label class="moveCount"> Déplacements:&nbsp<span class="moveNbr">0</span></label>
+		</div>
+         </fieldset>
+          
+       </div>
+       <div class="grid">
+        
+    </div>
+    <h3 class="link"><a href="http://www-etud.iro.umontreal.ca/~siemenil/IFT3225/tp2/Taquin.html">Le jeu sur les serveurs du DIRO</a></h3> 
+</div>      
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+  <script src="code.js"></script>
+</body>
+        <footer id="footer">
+        <ul>
+            Auteurs
+            <li>Lenny SIEMENI (1055234)</li>
+            <li>Mourad BENCHIKH(20034241)</li>
+        </ul>
+        <p>Département d'informatique et recherche opérationnelle</p>
+        <a href="https://diro.umontreal.ca/accueil/"><img class="udem-logo" src="images/15_DIRO_LOGO_NB_modif.png" width="195px" height="38px"></a>
+        <a href="https://www.umontreal.ca/"><img class="udem-logo" src="images/UdeM_logo_Blanc.png" width="195px" height="92px"></a>
+    </footer>
+</html>
